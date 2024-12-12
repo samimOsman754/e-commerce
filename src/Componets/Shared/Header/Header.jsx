@@ -1,8 +1,11 @@
+import { StickyNavbar } from "./StickyNavbar"
 
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <>
+    <StickyNavbar/>
+    </>
   )
 }
 

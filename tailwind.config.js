@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const withMT = require("@material-tailwind/react/utils/withMT");
+const { Container } = require('postcss');
  
 module.exports = withMT({
   content: [
@@ -9,7 +10,12 @@ module.exports = withMT({
     "path-to-your-node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      Container:{
+        center: true,
+        padding: "1.25rem"
+      }
+    },
   },
   plugins: [],
 });
