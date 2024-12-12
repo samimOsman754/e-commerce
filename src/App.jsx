@@ -1,11 +1,11 @@
-import React from 'react'
-import Home from './pages/Home/Home'
+import MainLayout from "./Layout/MainLayout"
+
 
 
 function App() {
   return (
     <>
-    <Home/>
+    <MainLayout/>
     </>
   )
 }
